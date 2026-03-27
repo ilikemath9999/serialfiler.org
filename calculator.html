@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-053Z64N82F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-053Z64N82F');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When Can I File Bankruptcy Again? Date Calculator | FileBankruptcyAgain.com</title>
+<meta name="description" content="Free bankruptcy refiling date calculator. Enter your prior filing date and chapters to instantly find your earliest eligible date for a new bankruptcy discharge.">
+<link rel="canonical" href="https://filebankruptcyagain.com/calculator.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+<meta property="og:title" content="When Can I File Bankruptcy Again? Date Calculator">
+<meta property="og:description" content="Free calculator: enter your prior filing date and chapters to find your earliest eligible filing date.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://filebankruptcyagain.com/calculator.html">
+<meta property="og:site_name" content="FileBankruptcyAgain.com">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bankruptcy Refiling Date Calculator">
+<meta name="twitter:description" content="Free calculator: find your earliest eligible date to file bankruptcy again.">
+<style>
+:root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;--text-muted:#9eaab6;--accent:#58a6ff;--green:#3fb950;--red:#f85149}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;padding:1rem;background:var(--green);color:#fff;font-weight:600}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;overflow:visible}
+nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0.75rem 1rem;position:sticky;top:0;z-index:100}
+.nav-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem}
+.nav-brand{font-weight:700;font-size:1.1rem;color:var(--text)}
+.nav-links{display:flex;gap:1rem;flex-wrap:wrap;font-size:0.9rem}
+.hamburger{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:0.4rem 0.6rem;border-radius:4px;cursor:pointer;font-size:1.2rem}
+@media(max-width:700px){.hamburger{display:block}.nav-links{display:none;width:100%;flex-direction:column;gap:0.75rem;padding-top:0.75rem}.nav-links.open{display:flex}}
+main{max-width:800px;margin:0 auto;padding:2rem 1rem}
+h1{font-size:2rem;margin-bottom:1rem;line-height:1.3}
+h2{font-size:1.5rem;margin:2rem 0 0.75rem;color:var(--text)}
+h3{font-size:1.2rem;margin:1.5rem 0 0.5rem}
+p{margin-bottom:1rem;color:var(--text-muted)}
+ul,ol{margin:0 0 1rem 1.5rem;color:var(--text-muted)}
+li{margin-bottom:0.5rem}
+strong{color:var(--text)}
+.calc-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:2rem;margin:2rem 0}
+.calc-container h2{margin-top:0;text-align:center}
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-weight:600;margin-bottom:0.4rem;color:var(--text)}
+.form-group input,.form-group select{width:100%;padding:0.7rem 1rem;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:1rem;font-family:inherit}
+.form-group select{appearance:auto}
+.form-group .help{font-size:0.85rem;color:var(--text-muted);margin-top:0.3rem}
+.calc-btn{display:block;width:100%;padding:0.8rem;background:var(--accent);color:#fff;border:none;border-radius:6px;font-size:1.1rem;font-weight:700;cursor:pointer;margin-top:1.5rem}
+.calc-btn:hover{opacity:0.9}
+.result-box{display:none;margin-top:1.5rem;padding:1.5rem;border-radius:8px;text-align:center}
+.result-box.eligible{background:rgba(63,185,80,0.1);border:1px solid var(--green)}
+.result-box.not-eligible{background:rgba(248,81,73,0.1);border:1px solid var(--red)}
+.result-box .result-status{font-size:1.3rem;font-weight:700;margin-bottom:0.5rem}
+.result-box.eligible .result-status{color:var(--green)}
+.result-box.not-eligible .result-status{color:var(--red)}
+.result-box .result-date{font-size:1.1rem;color:var(--text)}
+.result-box .result-statute{font-size:0.9rem;color:var(--text-muted);margin-top:0.5rem}
+.result-box .result-note{font-size:0.85rem;color:var(--text-muted);margin-top:0.75rem;font-style:italic}
+.disclaimer{font-size:0.8rem;color:var(--text-muted);border-top:1px solid var(--border);padding-top:1rem;margin-top:2rem}
+footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem 1rem;text-align:center;font-size:0.85rem;color:var(--text-muted);margin-top:3rem}
+.network-links{display:flex;flex-wrap:wrap;justify-content:center;gap:0.75rem;margin-bottom:1rem}
+.network-links a{color:var(--accent);font-size:0.85rem}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "When Can I File Bankruptcy Again? Date Calculator",
+  "description": "Free bankruptcy refiling date calculator.",
+  "url": "https://filebankruptcyagain.com/calculator.html",
+  "isPartOf": {"@type": "WebSite", "name": "FileBankruptcyAgain.com", "url": "https://filebankruptcyagain.com/"},
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://filebankruptcyagain.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Calculator", "item": "https://filebankruptcyagain.com/calculator.html"}
+    ]
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">FileBankruptcyAgain.com</a>
+    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" onclick="let n=this.nextElementSibling;n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">&#9776;</button>
+    <div class="nav-links">
+      <a href="/waiting-periods.html">Waiting Periods</a>
+      <a href="/after-chapter-7.html">After Chapter 7</a>
+      <a href="/after-chapter-13.html">After Chapter 13</a>
+      <a href="/calculator.html" aria-current="page">Calculator</a>
+      <a href="/dismissed-vs-discharged.html">Dismissed vs Discharged</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <h1>When Can I File Bankruptcy Again?</h1>
+
+  <p>Use this free calculator to find your earliest eligible filing date. Enter the date your prior case was filed, the chapter of your prior case, and the chapter you want to file now. The calculator will tell you whether the waiting period has passed and, if not, when it will.</p>
+
+  <div class="calc-container">
+    <h2>Bankruptcy Refiling Calculator</h2>
+
+    <div class="form-group">
+      <label for="filing-date">Prior Case Filing Date</label>
+      <input type="date" id="filing-date" aria-describedby="filing-date-help">
+      <p class="help" id="filing-date-help">The date you filed your prior bankruptcy petition -- not the discharge date.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="prior-chapter">Prior Case Chapter</label>
+      <select id="prior-chapter">
+        <option value="">-- Select --</option>
+        <option value="7">Chapter 7</option>
+        <option value="13">Chapter 13</option>
+        <option value="11">Chapter 11</option>
+        <option value="12">Chapter 12</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="new-chapter">New Case Chapter</label>
+      <select id="new-chapter">
+        <option value="">-- Select --</option>
+        <option value="7">Chapter 7</option>
+        <option value="13">Chapter 13</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="prior-outcome">How did your prior case end?</label>
+      <select id="prior-outcome">
+        <option value="discharged">Discharged (completed successfully)</option>
+        <option value="dismissed">Dismissed (case ended without discharge)</option>
+      </select>
+    </div>
+
+    <button class="calc-btn" onclick="calculate()" type="button">Calculate Earliest Filing Date</button>
+
+    <div class="result-box" id="result" role="alert" aria-live="polite"></div>
+  </div>
+
+  <h2>How This Calculator Works</h2>
+
+  <p>The calculator applies the three federal statutes that control bankruptcy refiling eligibility:</p>
+
+  <ul>
+    <li><strong><a href="https://www.law.cornell.edu/uscode/text/11/727">Section 727(a)(8)</a>:</strong> 8-year bar for Chapter 7 after Chapter 7 (or Chapter 11)</li>
+    <li><strong><a href="https://www.law.cornell.edu/uscode/text/11/727">Section 727(a)(9)</a>:</strong> 6-year bar for Chapter 7 after Chapter 13 (or Chapter 12)</li>
+    <li><strong><a href="https://www.law.cornell.edu/uscode/text/11/1328">Section 1328(f)</a>:</strong> 4-year bar for Chapter 13 after Chapter 7/11/12; 2-year bar for Chapter 13 after Chapter 13</li>
+  </ul>
+
+  <p>All waiting periods are measured from the <strong>filing date</strong> of the prior case to the filing date of the new case. If your prior case was dismissed (not discharged), the discharge bars do not apply, but you should check whether the <a href="/dismissed-vs-discharged.html">180-day filing bar under Section 109(g)</a> applies to your situation.</p>
+
+  <h2>Important Limitations</h2>
+
+  <p>This calculator tells you the earliest date you can file and be eligible for a <strong>discharge</strong>. It does not account for:</p>
+
+  <ul>
+    <li>Court-imposed filing bars from prior dismissals</li>
+    <li>The Section 109(g) 180-day bar for certain dismissed cases</li>
+    <li>The Section 727(a)(9) exceptions for 100% or 70%+ payment plans</li>
+    <li>Automatic stay limitations under Section 362(c)(3) and (c)(4)</li>
+    <li>Means test qualification for Chapter 7</li>
+  </ul>
+
+  <p>For a complete analysis of your situation, consult with a bankruptcy attorney. For more information about the waiting periods, see our <a href="/waiting-periods.html">detailed waiting periods guide</a>.</p>
+
+  <p>If you want to check whether your prior case appears in court records, you can use the free screener at <a href="https://1328f.com/check.html">1328f.com</a>, which covers all 94 federal bankruptcy districts.</p>
+
+  <p class="disclaimer">This calculator provides general information only and does not constitute legal advice. No attorney-client relationship is created by using this tool. The results are based on federal bankruptcy statutes and do not account for local rules, court orders, or individual circumstances. Consult a licensed attorney for advice about your specific situation.</p>
+</main>
+
+<footer>
+  <div class="network-links" aria-label="Bankruptcy Transparency Network">
+    <a href="https://1328f.com">1328f.com</a>
+    <a href="https://1328f.org">1328f.org</a>
+    <a href="https://341meeting.com">341meeting.com</a>
+    <a href="https://automaticstay.org">automaticstay.org</a>
+    <a href="https://727a8.com">727a8.com</a>
+    <a href="https://524injunction.com">524injunction.com</a>
+    <a href="https://bankruptcycost.com">bankruptcycost.com</a>
+    <a href="https://bankruptcydismissed.com">bankruptcydismissed.com</a>
+  </div>
+  Part of the <strong>Bankruptcy Transparency Network</strong> -- free tools for people navigating bankruptcy.
+  <br><span style="font-size:0.8rem">&copy; 2024 FileBankruptcyAgain.com. Open data, open source.</span>
+</footer>
+
+<script>
+function calculate() {
+  var dateInput = document.getElementById('filing-date').value;
+  var priorChapter = document.getElementById('prior-chapter').value;
+  var newChapter = document.getElementById('new-chapter').value;
+  var outcome = document.getElementById('prior-outcome').value;
+  var resultBox = document.getElementById('result');
+
+  if (!dateInput || !priorChapter || !newChapter) {
+    resultBox.style.display = 'block';
+    resultBox.className = 'result-box not-eligible';
+    resultBox.innerHTML = '<div class="result-status">Please fill in all fields</div><div class="result-date">Select your prior filing date, prior chapter, and new chapter.</div>';
+    return;
+  }
+
+  var filingDate = new Date(dateInput + 'T00:00:00');
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // If dismissed, no discharge bar applies
+  if (outcome === 'dismissed') {
+    resultBox.style.display = 'block';
+    resultBox.className = 'result-box eligible';
+    resultBox.innerHTML = '<div class="result-status">No Discharge Waiting Period</div>' +
+      '<div class="result-date">Since your prior case was dismissed (not discharged), the discharge waiting periods do not apply.</div>' +
+      '<div class="result-note">However, check whether the 180-day filing bar under Section 109(g) applies to your dismissal. ' +
+      'Also, if your case was dismissed within the last year, the automatic stay in your new case may be limited. ' +
+      '<a href="/dismissed-vs-discharged.html">Learn more</a>.</div>';
+    gtag('event', 'calculator_result', {event_category: 'calculator', event_label: 'dismissed', value: 0});
+    return;
+  }
+
+  // Determine waiting period in years
+  var years = 0;
+  var statute = '';
+  var statuteUrl = '';
+
+  if (priorChapter === '7' && newChapter === '7') {
+    years = 8;
+    statute = '11 U.S.C. Section 727(a)(8)';
+    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
+  } else if (priorChapter === '11' && newChapter === '7') {
+    years = 8;
+    statute = '11 U.S.C. Section 727(a)(8)';
+    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
+  } else if (priorChapter === '13' && newChapter === '7') {
+    years = 6;
+    statute = '11 U.S.C. Section 727(a)(9)';
+    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
+  } else if (priorChapter === '12' && newChapter === '7') {
+    years = 6;
+    statute = '11 U.S.C. Section 727(a)(9)';
+    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
+  } else if ((priorChapter === '7' || priorChapter === '11' || priorChapter === '12') && newChapter === '13') {
+    years = 4;
+    statute = '11 U.S.C. Section 1328(f)(1)';
+    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/1328';
+  } else if (priorChapter === '13' && newChapter === '13') {
+    years = 2;
+    statute = '11 U.S.C. Section 1328(f)(2)';
+    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/1328';
+  }
+
+  // Calculate earliest date
+  var earliest = new Date(filingDate);
+  earliest.setFullYear(earliest.getFullYear() + years);
+
+  var eligible = today >= earliest;
+  var options = {year: 'numeric', month: 'long', day: 'numeric'};
+  var earliestStr = earliest.toLocaleDateString('en-US', options);
+  var filingStr = filingDate.toLocaleDateString('en-US', options);
+
+  var noteText = '';
+  if (priorChapter === '13' && newChapter === '7') {
+    noteText = 'Note: The 6-year bar does not apply if your prior Chapter 13 plan paid 100% of allowed unsecured claims, or paid at least 70% in good faith with best effort. See <a href="/waiting-periods.html">waiting periods</a> for details.';
+  }
+  if (newChapter === '13' && !eligible) {
+    noteText += (noteText ? '<br><br>' : '') + 'You can still file a Chapter 13 case before this date, but you will not be eligible for a discharge. Some people file without seeking a discharge to benefit from the automatic stay and plan treatment.';
+  }
+
+  resultBox.style.display = 'block';
+  if (eligible) {
+    resultBox.className = 'result-box eligible';
+    resultBox.innerHTML = '<div class="result-status">You Are Eligible Now</div>' +
+      '<div class="result-date">The ' + years + '-year waiting period has passed. You filed on ' + filingStr + ', and the earliest eligible date was ' + earliestStr + '.</div>' +
+      '<div class="result-statute">Statute: <a href="' + statuteUrl + '">' + statute + '</a></div>' +
+      (noteText ? '<div class="result-note">' + noteText + '</div>' : '');
+  } else {
+    var diffMs = earliest - today;
+    var diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+    var diffMonths = Math.floor(diffDays / 30);
+    var remainStr = diffMonths > 0 ? diffMonths + ' month' + (diffMonths !== 1 ? 's' : '') + ' and ' + (diffDays % 30) + ' day' + ((diffDays % 30) !== 1 ? 's' : '') : diffDays + ' day' + (diffDays !== 1 ? 's' : '');
+
+    resultBox.className = 'result-box not-eligible';
+    resultBox.innerHTML = '<div class="result-status">Not Yet Eligible</div>' +
+      '<div class="result-date">Your earliest eligible filing date is <strong>' + earliestStr + '</strong> (' + remainStr + ' from today).</div>' +
+      '<div class="result-statute">Waiting period: ' + years + ' years. Statute: <a href="' + statuteUrl + '">' + statute + '</a></div>' +
+      (noteText ? '<div class="result-note">' + noteText + '</div>' : '');
+  }
+
+  gtag('event', 'calculator_result', {
+    event_category: 'calculator',
+    event_label: 'ch' + priorChapter + '_to_ch' + newChapter,
+    value: eligible ? 1 : 0
+  });
+}
+</script>
+<script src="/btn-engage.js"></script>
+</body>
+</html>
