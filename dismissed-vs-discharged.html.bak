@@ -18,18 +18,18 @@
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="no-referrer-when-downgrade" name="referrer"/>
-<title>When Can I File Bankruptcy Again? Date Calculator</title>
-<meta content="Free bankruptcy refiling date calculator. Enter your prior filing date and chapters to instantly find your earliest eligible date for a new..." name="description"/>
-<link href="https://serialfiler.org/calculator.html" rel="canonical"/>
+<title>Dismissed vs Discharged: Can I Refile After a Bankruptcy Dismissal?</title>
+<meta content="My last bankruptcy was dismissed, not discharged. Can I refile? Learn the critical difference, the 109(g) 180-day bar, and automatic stay l..." name="description"/>
+<link href="https://serialfiler.org/dismissed-vs-discharged.html" rel="canonical"/>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;⚖️&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
-<meta content="When Can I File Bankruptcy Again? Date Calculator" property="og:title"/>
-<meta content="Free bankruptcy refiling date calculator. Enter your prior filing date and chapters to instantly find your earliest eligible date for a new..." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://serialfiler.org/calculator.html" property="og:url"/>
+<meta content="Dismissed vs Discharged: Can I Refile After a Bankruptcy Dismissal?" property="og:title"/>
+<meta content="My last bankruptcy was dismissed, not discharged. Can I refile? Learn the critical difference, the 109(g) 180-day bar, and automatic stay l..." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://serialfiler.org/dismissed-vs-discharged.html" property="og:url"/>
 <meta content="FileBankruptcyAgain.com" property="og:site_name"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="When Can I File Bankruptcy Again? Date Calculator" name="twitter:title"/>
-<meta content="Free bankruptcy refiling date calculator. Enter your prior filing date and chapters to instantly find your earliest eligible date for a new..." name="twitter:description"/>
+<meta content="Dismissed vs Discharged: Can I Refile After a Bankruptcy Dismissal?" name="twitter:title"/>
+<meta content="My last bankruptcy was dismissed, not discharged. Can I refile? Learn the critical difference, the 109(g) 180-day bar, and automatic stay l..." name="twitter:description"/>
 <meta content="https://serialfiler.org/og-image.svg" property="og:image"/>
 <meta content="https://serialfiler.org/og-image.svg" name="twitter:image"/>
 <style>
@@ -37,7 +37,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;padding:1rem;background:var(--green);color:#fff;font-weight:600}
 .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;overflow:visible}
 nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0.75rem 1rem;position:sticky;top:0;z-index:100}
@@ -54,24 +54,22 @@ p{margin-bottom:1rem;color:var(--text-muted)}
 ul,ol{margin:0 0 1rem 1.5rem;color:var(--text-muted)}
 li{margin-bottom:0.5rem}
 strong{color:var(--text)}
-.calc-container{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:2rem;margin:2rem 0}
-.calc-container h2{margin-top:0;text-align:center}
-.form-group{margin-bottom:1.25rem}
-.form-group label{display:block;font-weight:600;margin-bottom:0.4rem;color:var(--text)}
-.form-group input,.form-group select{width:100%;padding:0.7rem 1rem;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:1rem;font-family:inherit}
-.form-group select{appearance:auto}
-.form-group .help{font-size:0.85rem;color:var(--text-muted);margin-top:0.3rem}
-.calc-btn{display:block;width:100%;padding:0.8rem;background:var(--accent);color:#fff;border:none;border-radius:6px;font-size:1.1rem;font-weight:700;cursor:pointer;margin-top:1.5rem}
-.calc-btn:hover{opacity:0.9}
-.result-box{display:none;margin-top:1.5rem;padding:1.5rem;border-radius:8px;text-align:center}
-.result-box.eligible{background:rgba(63,185,80,0.1);border:1px solid var(--green)}
-.result-box.not-eligible{background:rgba(248,81,73,0.1);border:1px solid var(--red)}
-.result-box .result-status{font-size:1.3rem;font-weight:700;margin-bottom:0.5rem}
-.result-box.eligible .result-status{color:var(--green)}
-.result-box.not-eligible .result-status{color:var(--red)}
-.result-box .result-date{font-size:1.1rem;color:var(--text)}
-.result-box .result-statute{font-size:0.9rem;color:var(--text-muted);margin-top:0.5rem}
-.result-box .result-note{font-size:0.85rem;color:var(--text-muted);margin-top:0.75rem;font-style:italic}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+@media(max-width:600px){.compare-grid{grid-template-columns:1fr}}
+.compare-box{background:var(--surface);border-radius:8px;padding:1.25rem;border:1px solid var(--border)}
+.compare-box h3{margin-top:0}
+.compare-box.good{border-color:var(--green)}
+.compare-box.good h3{color:var(--green)}
+.compare-box.bad{border-color:var(--red)}
+.compare-box.bad h3{color:var(--red)}
+.alert-box{background:var(--surface);border:1px solid var(--red);border-radius:8px;padding:1.25rem;margin:1.5rem 0}
+.alert-box h3{margin-top:0;color:var(--red)}
+.highlight-box{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.25rem;margin:1.5rem 0}
+.highlight-box h3{margin-top:0;color:var(--accent)}
+.cta-box{background:var(--surface);border:1px solid var(--accent);border-radius:8px;padding:1.5rem;margin:2rem 0;text-align:center}
+.cta-box p{color:var(--text)}
+.btn{display:inline-block;padding:0.6rem 1.5rem;background:var(--accent);color:#fff;border-radius:6px;font-weight:600;margin-top:0.5rem}
+.btn:hover{opacity:0.9;text-decoration:none}
 .disclaimer{font-size:0.8rem;color:var(--text-muted);border-top:1px solid var(--border);padding-top:1rem;margin-top:2rem}
 footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem 1rem;text-align:center;font-size:0.85rem;color:var(--text-muted);margin-top:3rem}
 .network-links{display:flex;flex-wrap:wrap;justify-content:center;gap:0.75rem;margin-bottom:1rem}
@@ -83,15 +81,15 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "When Can I File Bankruptcy Again? Date Calculator",
-  "description": "Free bankruptcy refiling date calculator.",
-  "url": "https://serialfiler.org/calculator.html",
+  "name": "Dismissed vs Discharged: Can I Refile After a Bankruptcy Dismissal?",
+  "description": "Explains the difference between dismissed and discharged bankruptcy cases for refiling purposes.",
+  "url": "https://serialfiler.org/dismissed-vs-discharged.html",
   "isPartOf": {"@type": "WebSite", "name": "FileBankruptcyAgain.com", "url": "https://serialfiler.org/"},
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://serialfiler.org/"},
-      {"@type": "ListItem", "position": 2, "name": "Calculator", "item": "https://serialfiler.org/calculator.html"}
+      {"@type": "ListItem", "position": 2, "name": "Dismissed vs Discharged", "item": "https://serialfiler.org/dismissed-vs-discharged.html"}
     ]
   }
 }
@@ -105,8 +103,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
   "@graph": [
     {
       "@type": "Article",
-      "headline": "When Can I File Bankruptcy Again?",
-      "description": "Free bankruptcy refiling date calculator. Enter your prior filing date and chapters to instantly find your earliest eligible date for a new bankruptcy discharge",
+      "headline": "My Last Case Was Dismissed, Not Discharged - Can I Refile?",
+      "description": "My last bankruptcy was dismissed, not discharged. Can I refile? Learn the critical difference, the 109(g) 180-day bar, and automatic stay limitations for repeat",
       "author": {
         "@type": "Organization",
         "name": "Open Bankruptcy Project"
@@ -118,7 +116,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
       },
       "datePublished": "2026-03-28",
       "dateModified": "2026-03-29",
-      "mainEntityOfPage": "https://serialfiler.org/calculator.html"
+      "mainEntityOfPage": "https://serialfiler.org/dismissed-vs-discharged.html"
     },
     {
       "@type": "BreadcrumbList",
@@ -138,8 +136,64 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "When Can I File Bankruptcy Again?",
-          "item": "https://serialfiler.org/calculator.html"
+          "name": "My Last Case Was Dismissed, Not Discharged - Can I Refile?",
+          "item": "https://serialfiler.org/dismissed-vs-discharged.html"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "My Last Case Was Dismissed, Not Discharged - Can I Refile?",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "text": "⚖️\">\n\n\n\n\n\n\n\n\n\n:root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;--text-muted:#9eaab6;--accent:#58a6ff;--green:#3fb950;--red:#f85149}\n*{margin:0;padding:0;box-sizing:border-box}\nbody"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "text": "Creditors can resume collection"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "text": "The discharge waiting periods do NOT apply"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "text": "You may refile, subject to 109(g) and stay limits"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "text": "Eligible debts were permanently wiped out"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "text": "Creditors cannot collect on discharged debts"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "text": "The discharge waiting periods DO apply"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 8,
+          "text": "See waiting period table"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 9,
+          "text": "Failure to file required documents after being ordered to do so"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 10,
+          "text": "Failure to attend the 341 meeting of creditors"
         }
       ]
     }
@@ -147,52 +201,10 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When Can I File Bankruptcy Again?", "acceptedAnswer": {"@type": "Answer", "text": "Filing fees are $338 for Chapter 7 and $313 for Chapter 13. Attorney fees typically range from $1,000 to $3,500 depending on the chapter and complexity. Fee waivers and installment payments are available for those who qualify."}}, {"@type": "Question", "name": "How much does bankruptcy cost?", "acceptedAnswer": {"@type": "Answer", "text": "Filing fees are $338 for Chapter 7 and $313 for Chapter 13. Attorney fees typically range from $1,000 to $3,500 depending on the chapter and complexity. Fee waivers and installment payments are available for those who qualify."}}, {"@type": "Question", "name": "Can I file bankruptcy if I can't afford an attorney?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can file pro se (without an attorney), apply for a fee waiver to eliminate the filing fee, or pay the filing fee in installments. Some legal aid organizations also provide free bankruptcy assistance."}}, {"@type": "Question", "name": "Are there hidden fees in bankruptcy?", "acceptedAnswer": {"@type": "Answer", "text": "The main costs are the filing fee, attorney fee, and credit counseling courses (about $20-50 total). Some attorneys charge extra for adversary proceedings or plan modifications, so ask for a complete fee breakdown upfront."}}, {"@type": "Question", "name": "What is the cheapest way to file bankruptcy?", "acceptedAnswer": {"@type": "Answer", "text": "The cheapest option is filing pro se with a fee waiver, which costs nothing. If you hire an attorney, Chapter 7 is generally less expensive than Chapter 13. Always compare quotes from multiple attorneys."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "My Last Case Was Dismissed, Not Discharged - Can I Refile?", "acceptedAnswer": {"@type": "Answer", "text": "Most unsecured debts are discharged, including credit cards, medical bills, personal loans, and utility arrears. Debts that typically cannot be discharged include student loans (except in hardship cases), most taxes, child support, alimony, and debts from fraud or willful injury."}}, {"@type": "Question", "name": "What debts are discharged in bankruptcy?", "acceptedAnswer": {"@type": "Answer", "text": "Most unsecured debts are discharged, including credit cards, medical bills, personal loans, and utility arrears. Debts that typically cannot be discharged include student loans (except in hardship cases), most taxes, child support, alimony, and debts from fraud or willful injury."}}, {"@type": "Question", "name": "How long does it take to get a bankruptcy discharge?", "acceptedAnswer": {"@type": "Answer", "text": "In Chapter 7, the discharge typically arrives about 60 days after the 341 meeting, or roughly 3-4 months after filing. In Chapter 13, the discharge comes after completing all plan payments, which takes 3-5 years."}}, {"@type": "Question", "name": "Can a creditor object to my discharge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Creditors can file an adversary proceeding arguing that a specific debt should not be discharged due to fraud, misrepresentation, or other exceptions under 11 U.S.C. Section 523. They can also object to your entire discharge under Section 727 for misconduct like hiding assets."}}, {"@type": "Question", "name": "What is the difference between a discharge and a dismissal?", "acceptedAnswer": {"@type": "Answer", "text": "A discharge eliminates your personal liability for qualifying debts permanently. A dismissal ends your bankruptcy case without eliminating any debts, as if you never filed. A dismissal may also impose a waiting period before you can file again."}}]}
 </script>
-<link href="https://serialfiler.org/calculator.html" hreflang="en" rel="alternate"/>
-<link href="https://serialfiler.org/calculator-es.html" hreflang="es" rel="alternate"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "When Can I File Bankruptcy Again? Date Calculator",
-  "description": "Free bankruptcy refiling date calculator. Enter your prior filing date and chapters to instantly find your earliest eligible date for a new...",
-  "url": "https://serialfiler.org/calculator.html",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Any",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "provider": {
-    "@type": "Organization",
-    "name": "Open Bankruptcy Project",
-    "url": "https://openbankruptcyproject.org"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NonprofitOrganization",
-  "name": "Open Bankruptcy Project",
-  "alternateName": "OBP",
-  "url": "https://openbankruptcyproject.org",
-  "email": "info@openbankruptcyproject.org",
-  "taxID": "41-5159631",
-  "nonprofitStatus": "Nonprofit501c3",
-  "description": "The Open Bankruptcy Project is a 501(c)(3) nonprofit providing free tools, research, and consumer guides to help people navigate the federal bankruptcy system. We also conduct and publish empirical research on how the system actually works for consumers and share findings with rule-making bodies, regulators, and the public.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1000 W 100th St",
-    "addressLocality": "Kansas City",
-    "addressRegion": "MO",
-    "postalCode": "64114",
-    "addressCountry": "US"
-  }
-}
-</script>
+<link href="https://serialfiler.org/dismissed-vs-discharged.html" hreflang="en" rel="alternate"/>
+<link href="https://serialfiler.org/dismissed-vs-discharged-es.html" hreflang="es" rel="alternate"/>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -203,8 +215,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
 <a href="/">Home</a>
 <a href="/after-chapter-13.html">After Ch.13</a>
 <a href="/after-chapter-7.html">After Ch.7</a>
-<a class="active" href="/calculator.html">Calculator</a>
-<a href="/dismissed-vs-discharged.html">Dismissed vs Discharged</a>
+<a href="/calculator.html">Calculator</a>
+<a class="active" href="/dismissed-vs-discharged.html">Dismissed vs Discharged</a>
 <a href="/waiting-periods.html">Waiting Periods</a>
 <a href="/automatic-stay-limits.html">Stay Limits</a>
 <a href="/no-stay-at-all.html">No Stay</a>
@@ -213,64 +225,83 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
 </div>
 </nav>
 <main id="main">
-<nav aria-label="Breadcrumb" class="breadcrumb-nav"><a href="https://1328f.org">Home</a><span class="separator">›</span><a href="https://serialfiler.org">Serial Bankruptcy Filers</a><span class="separator">›</span><span>When Can I File Bankruptcy Again?</span></nav>
-<h1>When Can I File Bankruptcy Again?</h1>
-<p>Use this free calculator to find your earliest eligible filing date. Enter the date your prior case was filed, the chapter of your prior case, and the chapter you want to file now. The calculator will tell you whether the waiting period has passed and, if not, when it will.</p>
-<div class="calc-container">
-<h2>Bankruptcy Refiling Calculator</h2>
-<div class="form-group">
-<label for="filing-date">Prior Case Filing Date</label>
-<input aria-describedby="filing-date-help" id="filing-date" type="date"/>
-<p class="help" id="filing-date-help">The date you filed your prior bankruptcy petition - not the <a href="https://bankruptcydischarge.org/" title="discharge">discharge</a> date.</p>
-</div>
-<div class="form-group">
-<label for="prior-chapter">Prior Case Chapter</label>
-<select id="prior-chapter">
-<option value="">-- Select --</option>
-<option value="7"><a href="https://whatischapter7.com/" title="Chapter 7">Chapter 7</a></option>
-<option value="13"><a href="https://chapter7vs13.org/" title="Chapter 13">Chapter 13</a></option>
-<option value="11"><a href="https://section1191.org/" title="Chapter 11">Chapter 11</a></option>
-<option value="12">Chapter 12</option>
-</select>
-</div>
-<div class="form-group">
-<label for="new-chapter">New Case Chapter</label>
-<select id="new-chapter">
-<option value="">-- Select --</option>
-<option value="7">Chapter 7</option>
-<option value="13">Chapter 13</option>
-</select>
-</div>
-<div class="form-group">
-<label for="prior-outcome">How did your prior case end?</label>
-<select id="prior-outcome">
-<option value="discharged">Discharged (completed successfully)</option>
-<option value="dismissed">Dismissed (case ended without discharge)</option>
-</select>
-</div>
-<button class="calc-btn" onclick="calculate()" type="button">Calculate Earliest Filing Date</button>
-<div aria-live="polite" class="result-box" id="result" role="alert"></div>
-</div>
-<h2>How This Calculator Works</h2>
-<p>The calculator applies the three federal statutes that control bankruptcy refiling eligibility:</p>
+<nav aria-label="Breadcrumb" class="breadcrumb-nav"><a href="https://1328f.org">Home</a><span class="separator">›</span><a href="https://serialfiler.org">Serial Bankruptcy Filers</a><span class="separator">›</span><span>My Last Case Was Dismissed, Not Discharged - Can I Refile?</span></nav>
+<h1>My Last Case Was Dismissed, Not Discharged - Can I Refile?</h1>
+<p>If your last bankruptcy case was dismissed rather than discharged, you are in a fundamentally different situation than someone whose case ended with a <a href="https://bankruptcydischarge.org/" title="discharge">discharge</a>. The <a href="https://bankruptcydischarge.org/" title="discharge">discharge</a> waiting periods (8 years, 6 years, 4 years, 2 years) do not apply to you. But there are still rules you need to understand before filing again.</p>
+<h2>Dismissed vs. Discharged: The Critical Difference</h2>
+<div class="compare-grid">
+<div class="compare-box bad">
+<h3>Dismissed</h3>
+<p>Your case was closed <strong>without completing</strong> the bankruptcy process. No debts were eliminated. You are back where you started - creditors can resume collection.</p>
 <ul>
-<li><strong><a href="https://www.law.cornell.edu/uscode/text/11/727">Section 727(a)(8)</a>:</strong> 8-year bar for <a href="https://whatischapter7.com/" title="Chapter 7">Chapter 7</a> after Chapter 7 (or <a href="https://section1191.org/" title="Chapter 11">Chapter 11</a>)</li>
-<li><strong><a href="https://www.law.cornell.edu/uscode/text/11/727">Section 727(a)(9)</a>:</strong> 6-year bar for Chapter 7 after <a href="https://chapter7vs13.org/" title="Chapter 13">Chapter 13</a> (or Chapter 12)</li>
-<li><strong><a href="https://www.law.cornell.edu/uscode/text/11/1328">Section 1328(f)</a>:</strong> 4-year bar for Chapter 13 after Chapter 7/11/12; 2-year bar for Chapter 13 after Chapter 13</li>
+<li>No debts were discharged</li>
+<li>Creditors can resume collection</li>
+<li>The discharge waiting periods do NOT apply</li>
+<li>You may <a href="https://canifileagain.org/" title="file bankruptcy again">refile</a>, subject to <a href="https://109g.org/" title="Section 109(g)">109(g)</a> and stay limits</li>
 </ul>
-<p>All waiting periods are measured from the <strong>filing date</strong> of the prior case to the filing date of the new case. If your prior case was dismissed (not discharged), the <a href="https://bankruptcydischarge.org/" title="discharge">discharge</a> bars do not apply, but you should check whether the <a href="/dismissed-vs-discharged.html">180-day filing bar under Section 109(g)</a> applies to your situation.</p>
-<h2>Important Limitations</h2>
-<p>This calculator tells you the earliest date you can file and be eligible for a <strong>discharge</strong>. It does not account for:</p>
+</div>
+<div class="compare-box good">
+<h3>Discharged</h3>
+<p>Your case was completed <strong>successfully</strong>. Eligible debts were permanently eliminated. You received the <a href="https://bankruptcyfreshstart.org" rel="noopener" target="_blank" title="Fresh Start After Bankruptcy - Open Bankruptcy Project">fresh start</a> that bankruptcy provides.</p>
 <ul>
-<li>Court-imposed filing bars from prior dismissals</li>
-<li>The <a href="https://109g.org" rel="noopener" target="_blank" title="Section 109 Eligibility - Open Bankruptcy Project">Section 109</a>(g) 180-day bar for certain dismissed cases</li>
-<li>The <a href="https://727a8.com" rel="noopener" target="_blank" title="Section 727 Chapter 7 Discharge - Open Bankruptcy Project">Section 727</a>(a)(9) exceptions for 100% or 70%+ payment plans</li>
-<li><a href="https://automaticstay.org" rel="noopener" target="_blank" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project">Automatic stay</a> limitations under <a href="https://automaticstay.org" rel="noopener" target="_blank" title="Section 362 Automatic Stay - Open Bankruptcy Project">Section 362</a>(c)(3) and (c)(4)</li>
-<li><a href="https://meanstest.org" rel="noopener" target="_blank" title="Bankruptcy Means Test - Open Bankruptcy Project">Means test</a> qualification for Chapter 7</li>
+<li>Eligible debts were permanently wiped out</li>
+<li>Creditors cannot collect on discharged debts</li>
+<li>The discharge waiting periods DO apply</li>
+<li><a href="/waiting-periods.html">See waiting period table</a></li>
 </ul>
-<p>For a complete analysis of your situation, consult with a bankruptcy attorney. For more information about the waiting periods, see our <a href="/waiting-periods.html">detailed waiting periods guide</a>.</p>
-<p>If you want to check whether your prior case appears in court records, you can use the free screener at <a href="https://1328f.com/check.html">1328f.com</a>, which covers all 94 federal bankruptcy districts.</p>
-<p class="disclaimer">This calculator provides general information only and does not constitute legal advice. No attorney-client relationship is created by using this tool. The results are based on federal bankruptcy statutes and do not account for local rules, court orders, or individual circumstances. Consult a licensed attorney for advice about your specific situation.<br/>A project of the <strong>Open Bankruptcy Project</strong>, a 501(c)(3) public charity (EIN 41-5159631).</p>
+</div>
+</div>
+<p>The key takeaway: <strong>the 8-year, 6-year, 4-year, and 2-year waiting periods under Sections <a href="https://727a8.com/" title="Section 727(a)(8)">727(a)(8)</a>, 727(a)(9), and <a href="https://1328f.com/" title="Section 1328(f)">1328(f)</a> only apply when you received a discharge in the prior case.</strong> If your case was dismissed, those statutes are not triggered.</p>
+<h2>The <a href="https://www.law.cornell.edu/uscode/text/11/109#g_0" rel="noopener" target="_blank">Section 109(g)</a> Filing Bar</h2>
+<div class="alert-box">
+<h3>180-Day Filing Restriction</h3>
+<p>Even though the discharge bars do not apply to dismissed cases, <a href="https://www.law.cornell.edu/uscode/text/11/109">Section 109(g)</a> can still prevent you from filing a new case for 180 days after a <a href="https://dismissedbankruptcy.org/" title="dismissal">dismissal</a>. This bar applies in two situations.</p>
+</div>
+<h3>Situation 1: Willful Failure to Obey Court Orders</h3>
+<p>If your prior case was dismissed because you willfully failed to abide by orders of the court, or willfully failed to appear before the court in proper prosecution of the case, you cannot file a new case for 180 days after the <a href="https://dismissedbankruptcy.org/" title="dismissal">dismissal</a>. Common triggers include:</p>
+<ul>
+<li>Failure to file required documents after being ordered to do so</li>
+<li>Failure to attend the 341 <a href="https://341meeting.org" rel="noopener" target="_blank" title="341 Meeting of Creditors - Open Bankruptcy Project">meeting of creditors</a></li>
+<li>Failure to make required plan payments in <a href="https://chapter7vs13.org/" title="Chapter 13">Chapter 13</a></li>
+<li>Failure to comply with court orders regarding document production</li>
+</ul>
+<p>The key word here is "willful." If you had a legitimate reason for the failure (medical emergency, natural disaster, lack of notice), you may be able to argue that the <a href="https://109g.org/" title="Section 109(g)">109(g)</a> bar does not apply.</p>
+<h3>Situation 2: Voluntary Dismissal After Relief From Stay Motion</h3>
+<p>If you voluntarily dismissed your prior case after a creditor filed a <a href="https://relieffromstay.org" rel="noopener" target="_blank" title="Motion for Relief from Stay - Open Bankruptcy Project">motion for relief</a> from the <a href="https://automaticstay.org" rel="noopener" target="_blank" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project">automatic stay</a>, the 180-day bar applies. This rule exists to prevent a common abuse: filing bankruptcy to stop a foreclosure or repossession, then dismissing the case when the creditor tries to <a href="https://relieffromstay.org/" title="relief from stay">lift the stay</a>, then refiling immediately to restart the stay clock.</p>
+<h2>Automatic Stay Limitations After Dismissal</h2>
+<p>Even if the 109(g) bar does not apply and you are free to file a new case, the <a href="https://automaticstay.org" rel="noopener" target="_blank" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project">automatic stay</a> in your new case may be limited. Under <a href="https://www.law.cornell.edu/uscode/text/11/362">Section 362(c)(3) and (c)(4)</a>:</p>
+<div class="highlight-box">
+<h3>One Prior Case Pending and Dismissed in Last Year</h3>
+<p>If you had one prior case that was pending within the preceding year and was dismissed, the <a href="https://automaticstay.org" rel="noopener" target="_blank" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project">automatic stay</a> in your new case <strong>automatically terminates after 30 days</strong> unless you file a motion to extend it. To get the stay extended, you must show the court that the new case was filed in <a href="https://chapter13plan.org/" title="good faith">good faith</a> - meaning there has been a substantial change in your financial affairs or other good cause.</p>
+</div>
+<div class="alert-box">
+<h3>Two or More Prior Cases Dismissed in Last Year</h3>
+<p>If you had two or more prior cases pending within the preceding year that were dismissed, you get <strong>no <a href="https://automaticstay.org/" title="automatic stay">automatic stay</a> at all</strong> in the new case. The stay never takes effect. You must file a motion to impose the stay and demonstrate <a href="https://chapter13plan.org/" title="good faith">good faith</a>. Until the court grants that motion, creditors are free to continue collection activities, foreclosures, and repossessions.</p>
+</div>
+<h2>Common Dismissal Scenarios</h2>
+<h3>Chapter 13 Dismissed for Missed Payments</h3>
+<p>This is the most common dismissal scenario. You fell behind on plan payments, the trustee filed a motion to dismiss, and the court granted it. You can <a href="https://canifileagain.org/" title="file bankruptcy again">refile</a>, but if the dismissal happened within the last year, your <a href="https://automaticstay.org" rel="noopener" target="_blank" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project">automatic stay</a> will be limited to 30 days. If this is your second or third dismissal in a year, you may not get a stay at all.</p>
+<h3>Chapter 7 Dismissed for Means Test Failure</h3>
+<p>If your <a href="https://whatischapter7.com/" title="Chapter 7">Chapter 7</a> was dismissed because you did not pass the <a href="https://meanstest.org" rel="noopener" target="_blank" title="Bankruptcy Means Test - Open Bankruptcy Project">means test</a> (your income was too high), you can refile under <a href="https://chapter7vs13.org/" title="Chapter 13">Chapter 13</a> immediately. The <a href="https://meanstest.org" rel="noopener" target="_blank" title="Bankruptcy Means Test - Open Bankruptcy Project">means test</a> does not apply to Chapter 13 cases. Since you did not receive a discharge, no waiting period applies.</p>
+<h3>Voluntary Dismissal</h3>
+<p>If you voluntarily asked to dismiss your own case, you can generally refile. But check whether a creditor had filed a <a href="https://relieffromstay.org" rel="noopener" target="_blank" title="Motion for Relief from Stay - Open Bankruptcy Project">motion for relief</a> from stay before you dismissed - if so, the 109(g) 180-day bar may apply.</p>
+<h3>Dismissed with Prejudice</h3>
+<p>In rare cases, the court may dismiss your case "with prejudice," which typically includes a specific filing bar (often 180 days to 2 years). If your dismissal order includes a filing bar, you must wait that period regardless of the general rules above. Check your dismissal order carefully.</p>
+<h2>How to Check Your Prior Case Status</h2>
+<p>If you are not sure whether your prior case ended in a dismissal or a discharge, here is how to find out:</p>
+<ol>
+<li><strong>Check <a href="https://1328f.com/glossary.html#pacer" title="PACER">PACER</a>:</strong> Log in to <a href="https://pacer.uscourts.gov">pacer.uscourts.gov</a> and look up your case. The docket will show whether a discharge was entered.</li>
+<li><strong>Contact the court clerk:</strong> Call the bankruptcy court where your case was filed and ask for the case status.</li>
+<li><strong>Check your records:</strong> You should have received a discharge order in the mail if your case was discharged. If you never received one, your case may have been dismissed.</li>
+<li><strong>Use the free screener:</strong> <a href="https://1328f.com/check.html">1328f.com</a> can screen your case across all 94 federal districts to check for prior discharges.</li>
+</ol>
+<div class="cta-box">
+<p><strong>Check your refiling eligibility</strong></p>
+<p>Our calculator accounts for dismissed cases and can help you determine your next steps.</p>
+<a class="btn" href="/calculator.html">Open the Calculator</a>
+</div>
+<p>For a complete overview of all waiting periods (for cases that were discharged), see our <a href="/waiting-periods.html">waiting periods guide</a>. For chapter-specific guidance, see <a href="/after-chapter-7.html">filing after Chapter 7</a> or <a href="/after-chapter-13.html">filing after Chapter 13</a>.</p>
+<p class="disclaimer">This site provides general information about bankruptcy law and does not constitute legal advice. No attorney-client relationship is created by using this site. Consult a licensed attorney for advice about your specific situation.<br/>A project of the <strong>Open Bankruptcy Project</strong>, a 501(c)(3) nonprofit.</p>
 <!-- BTN Cross-Links (auto-generated by crosslink_builder.py) -->
 <div class="btn-crosslinks" style="max-width:820px;margin:1.5rem auto;padding:1.5rem;background:#161b22;border:1px solid #30363d;border-radius:8px">
 <p style="color:#f0f6fc;font-weight:600;font-size:1rem;margin:0 0 0.75rem 0">Related Guides</p>
@@ -340,7 +371,6 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
 </div>
   Part of the <strong>Open Bankruptcy Project</strong> - free tools for people navigating bankruptcy.
   <br/><span style="font-size:0.8rem">© 2024 FileBankruptcyAgain.com. Open data, open source.</span>
-
 <p style="margin-top:0.75rem;font-size:0.8rem"><a href="https://openbankruptcyproject.org/privacy.html?utm_source=serialfiler.org&amp;utm_medium=referral&amp;utm_campaign=btn-network" style="color:#7d8590;text-decoration:none">Privacy</a> | <a href="https://openbankruptcyproject.org/terms.html?utm_source=serialfiler.org&amp;utm_medium=referral&amp;utm_campaign=btn-network" style="color:#7d8590;text-decoration:none">Terms</a> | <a href="https://openbankruptcyproject.org?utm_source=serialfiler.org&amp;utm_medium=referral&amp;utm_campaign=btn-network" style="color:#7d8590;text-decoration:none">Open Bankruptcy Project</a></p>
 <div style="text-align:center;padding:1rem 0 0;border-top:1px solid #30363d;margin-top:1.5rem">
 <p style="color:#7d8590;font-size:0.75rem">Our research was cited by the federal judiciary as <a href="https://www.uscourts.gov/rules-policies/records-and-archives-rules-committees/rules-suggestions" rel="noopener" style="color:#58a6ff" target="_blank">Suggestion 26-BK-3</a></p>
@@ -365,113 +395,6 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
 <a href="https://1328f.org/support/" style="display:inline-block;background:#238636;color:#fff;padding:0.5rem 1.5rem;border-radius:6px;font-weight:600;font-size:0.9rem;text-decoration:none">Sponsor this research</a>
 </div>
 <script>fetch("https://1328f.com/data/recap-count.json").then(function(r){return r.json()}).then(function(d){var e=document.getElementById("recap-count");if(e&&d.count!==undefined)e.textContent=d.count.toLocaleString();var b=document.getElementById("recap-bar");if(b&&d.count)b.style.width=Math.min(100,d.count/37900000*100).toFixed(4)+"%";var dn=document.getElementById("recap-donated");if(dn&&d.donated!==undefined)dn.textContent="$"+d.donated.toLocaleString()}).catch(function(){})</script>
-<script>
-function calculate() {
-  var dateInput = document.getElementById('filing-date').value;
-  var priorChapter = document.getElementById('prior-chapter').value;
-  var newChapter = document.getElementById('new-chapter').value;
-  var outcome = document.getElementById('prior-outcome').value;
-  var resultBox = document.getElementById('result');
-
-  if (!dateInput || !priorChapter || !newChapter) {
-    resultBox.style.display = 'block';
-    resultBox.className = 'result-box not-eligible';
-    resultBox.innerHTML = '<div class="result-status">Please fill in all fields</div><div class="result-date">Select your prior filing date, prior chapter, and new chapter.</div>';
-    return;
-  }
-
-  var filingDate = new Date(dateInput + 'T00:00:00');
-  var today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  // If dismissed, no discharge bar applies
-  if (outcome === 'dismissed') {
-    resultBox.style.display = 'block';
-    resultBox.className = 'result-box eligible';
-    resultBox.innerHTML = '<div class="result-status">No Discharge Waiting Period</div>' +
-      '<div class="result-date">Since your prior case was dismissed (not discharged), the discharge waiting periods do not apply.</div>' +
-      '<div class="result-note">However, check whether the 180-day filing bar under Section 109(g) applies to your dismissal. ' +
-      'Also, if your case was dismissed within the last year, the automatic stay in your new case may be limited. ' +
-      '<a href="/dismissed-vs-discharged.html">Learn more</a>.</div>';
-    gtag('event', 'calculator_result', {event_category: 'calculator', event_label: 'dismissed', value: 0});
-    return;
-  }
-
-  // Determine waiting period in years
-  var years = 0;
-  var statute = '';
-  var statuteUrl = '';
-
-  if (priorChapter === '7' && newChapter === '7') {
-    years = 8;
-    statute = '11 U.S.C. Section 727(a)(8)';
-    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
-  } else if (priorChapter === '11' && newChapter === '7') {
-    years = 8;
-    statute = '11 U.S.C. Section 727(a)(8)';
-    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
-  } else if (priorChapter === '13' && newChapter === '7') {
-    years = 6;
-    statute = '11 U.S.C. Section 727(a)(9)';
-    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
-  } else if (priorChapter === '12' && newChapter === '7') {
-    years = 6;
-    statute = '11 U.S.C. Section 727(a)(9)';
-    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/727';
-  } else if ((priorChapter === '7' || priorChapter === '11' || priorChapter === '12') && newChapter === '13') {
-    years = 4;
-    statute = '11 U.S.C. Section 1328(f)(1)';
-    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/1328';
-  } else if (priorChapter === '13' && newChapter === '13') {
-    years = 2;
-    statute = '11 U.S.C. Section 1328(f)(2)';
-    statuteUrl = 'https://www.law.cornell.edu/uscode/text/11/1328';
-  }
-
-  // Calculate earliest date
-  var earliest = new Date(filingDate);
-  earliest.setFullYear(earliest.getFullYear() + years);
-
-  var eligible = today >= earliest;
-  var options = {year: 'numeric', month: 'long', day: 'numeric'};
-  var earliestStr = earliest.toLocaleDateString('en-US', options);
-  var filingStr = filingDate.toLocaleDateString('en-US', options);
-
-  var noteText = '';
-  if (priorChapter === '13' && newChapter === '7') {
-    noteText = 'Note: The 6-year bar does not apply if your prior Chapter 13 plan paid 100% of allowed unsecured claims, or paid at least 70% in good faith with best effort. See <a href="/waiting-periods.html">waiting periods</a> for details.';
-  }
-  if (newChapter === '13' && !eligible) {
-    noteText += (noteText ? '<br><br>' : '') + 'You can still file a Chapter 13 case before this date, but you will not be eligible for a discharge. Some people file without seeking a discharge to benefit from the automatic stay and plan treatment.';
-  }
-
-  resultBox.style.display = 'block';
-  if (eligible) {
-    resultBox.className = 'result-box eligible';
-    resultBox.innerHTML = '<div class="result-status">You Are Eligible Now</div>' +
-      '<div class="result-date">The ' + years + '-year waiting period has passed. You filed on ' + filingStr + ', and the earliest eligible date was ' + earliestStr + '.</div>' +
-      '<div class="result-statute">Statute: <a href="' + statuteUrl + '">' + statute + '</a></div>' +
-      (noteText ? '<div class="result-note">' + noteText + '</div>' : '');
-  } else {
-    var diffMs = earliest - today;
-    var diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
-    var diffMonths = Math.floor(diffDays / 30);
-    var remainStr = diffMonths > 0 ? diffMonths + ' month' + (diffMonths !== 1 ? 's' : '') + ' and ' + (diffDays % 30) + ' day' + ((diffDays % 30) !== 1 ? 's' : '') : diffDays + ' day' + (diffDays !== 1 ? 's' : '');
-
-    resultBox.className = 'result-box not-eligible';
-    resultBox.innerHTML = '<div class="result-status">Not Yet Eligible</div>' +
-      '<div class="result-date">Your earliest eligible filing date is <strong>' + earliestStr + '</strong> (' + remainStr + ' from today).</div>' +
-      '<div class="result-statute">Waiting period: ' + years + ' years. Statute: <a href="' + statuteUrl + '">' + statute + '</a></div>' +
-      (noteText ? '<div class="result-note">' + noteText + '</div>' : '');
-  }
-
-  gtag('event', 'calculator_result', {
-    event_category: 'calculator',
-    event_label: 'ch' + priorChapter + '_to_ch' + newChapter,
-    value: eligible ? 1 : 0
-  });
-}
-</script>
 <script defer="" src="/btn-engage.js"></script>
 <div style="text-align:center;padding:16px;color:#8b949e;font-size:0.8rem;border-top:1px solid #30363d;margin-top:20px"><p>This site provides general information, not legal advice. Consult a qualified attorney for your specific situation.</p></div>
 <!-- BOOST-TOP10 internal links (boost_internal_links.py) -->
@@ -479,8 +402,8 @@ function calculate() {
 <p style="color:#f0f6fc;font-weight:700;font-size:1.05rem;margin:0 0 0.75rem 0">You May Also Find Helpful</p>
 <ul style="list-style:none;padding:0;margin:0">
 <li style="margin-bottom:0.5rem"><a href="https://bankruptcymeanstest.org/?utm_source=serialfiler.org&amp;utm_medium=boost-top10&amp;utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Bankruptcy Means Test by State</a> <span style="color:#7d8590;font-size:0.8rem">-- bankruptcymeanstest.org</span></li>
+<li style="margin-bottom:0.5rem"><a href="https://chapter7vs13.org/?utm_source=serialfiler.org&amp;utm_medium=boost-top10&amp;utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Chapter 7 vs. Chapter 13 Comparison</a> <span style="color:#7d8590;font-size:0.8rem">-- chapter7vs13.org</span></li>
 <li style="margin-bottom:0.5rem"><a href="https://727a8.com/?utm_source=serialfiler.org&amp;utm_medium=boost-top10&amp;utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Section 727(a)(8) Discharge Waiting Period</a> <span style="color:#7d8590;font-size:0.8rem">-- 727a8.com</span></li>
-<li style="margin-bottom:0.5rem"><a href="https://openbankruptcyproject.org/?utm_source=serialfiler.org&amp;utm_medium=boost-top10&amp;utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Open Bankruptcy Project</a> <span style="color:#7d8590;font-size:0.8rem">-- openbankruptcyproject.org</span></li>
 </ul>
 </div>
 <script defer="" src="https://openbankruptcyproject.org/btn-search.js"></script>

@@ -16,19 +16,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
-<title>When Does Refiling Bankruptcy Make Sense?</title>
-<meta name="description" content="Learn about when does refiling bankruptcy make sense? | serialfiler.org in our free 2026 guide. Clear explanations, real data, and practica...">
-<meta name="keywords" content="refiling bankruptcy, when to refile, strategic refiling, dismissed case refile, chapter conversion">
-<link rel="canonical" href="https://serialfiler.org/strategic-refiling.html">
+<title>Serial Filer Automatic Stay - Only 30 Days Under 362(c)(3)</title>
+<meta name="description" content="Learn about serial filer automatic stay - only 30 days under 362(c)(3) | serialfiler.org in our free 2026 guide.">
+<meta name="keywords" content="serial filer automatic stay, 30 day stay, 362(c)(3), repeat filer stay limits, extend automatic stay">
+<link rel="canonical" href="https://serialfiler.org/automatic-stay-limits.html">
 
-<meta property="og:title" content="When Does Refiling Bankruptcy Make Sense?">
-<meta property="og:description" content="Learn about when does refiling bankruptcy make sense? | serialfiler.org in our free 2026 guide. Clear explanations, real data, and practica...">
+<meta property="og:title" content="Serial Filer Automatic Stay - Only 30 Days Under 362(c)(3)">
+<meta property="og:description" content="Learn about serial filer automatic stay - only 30 days under 362(c)(3) | serialfiler.org in our free 2026 guide.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://serialfiler.org/strategic-refiling.html">
+<meta property="og:url" content="https://serialfiler.org/automatic-stay-limits.html">
 <meta property="og:site_name" content="serialfiler.org">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="When Does Refiling Bankruptcy Make Sense?">
-<meta name="twitter:description" content="Learn about when does refiling bankruptcy make sense? | serialfiler.org in our free 2026 guide. Clear explanations, real data, and practica...">
+<meta name="twitter:title" content="Serial Filer Automatic Stay - Only 30 Days Under 362(c)(3)">
+<meta name="twitter:description" content="Learn about serial filer automatic stay - only 30 days under 362(c)(3) | serialfiler.org in our free 2026 guide.">
 <meta property="og:image" content="https://serialfiler.org/og-image.svg">
 <meta name="twitter:image" content="https://serialfiler.org/og-image.svg">
 
@@ -48,12 +48,12 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is it bad to file bankruptcy more than once?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Many legitimate reasons exist for refiling - income changes, new debts, prior attorney errors, or needing a different chapter. Courts evaluate each case individually."}},
-    {"@type": "Question", "name": "Can I file again after my case was dismissed?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. If your case was dismissed without a discharge, no discharge bar applies. You may face a 180-day filing bar under Section 109(g) in some circumstances."}},
-    {"@type": "Question", "name": "What is the maximum number of times you can file bankruptcy?",
-     "acceptedAnswer": {"@type": "Answer", "text": "There is no legal maximum. However, repeat filers face increasing scrutiny, limited automatic stays, and the discharge bars make it harder to obtain a discharge."}}
+    {"@type": "Question", "name": "How long does the automatic stay last for a serial filer?",
+     "acceptedAnswer": {"@type": "Answer", "text": "If you had one prior case pending and dismissed in the past year, the stay lasts only 30 days under Section 362(c)(3). You can ask the court to extend it by showing good faith."}},
+    {"@type": "Question", "name": "Can I get the automatic stay extended past 30 days?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes, by filing a motion within the 30-day window and proving by clear and convincing evidence that your new case was filed in good faith."}},
+    {"@type": "Question", "name": "What happens if I had two cases dismissed in the past year?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Under Section 362(c)(4), no automatic stay goes into effect at all. You must ask the court to impose a stay, which requires showing good faith."}}
   ]
 }
 </script>
@@ -63,8 +63,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "When Does Refiling Make Sense?",
-      "description": "Not all repeat bankruptcy filings are abuse. Legitimate reasons to refile include income changes, new debts, prior dismissal without discharge, and chapter conv",
+      "headline": "Automatic Stay Limits for Serial Filers",
+      "description": "If you filed bankruptcy twice in one year, the automatic stay in your new case lasts only 30 days under Section 362(c)(3) unless the court extends it.",
       "author": {
         "@type": "Organization",
         "name": "Open Bankruptcy Project"
@@ -76,7 +76,7 @@
       },
       "datePublished": "2026-03-28",
       "dateModified": "2026-03-29",
-      "mainEntityOfPage": "https://serialfiler.org/strategic-refiling.html"
+      "mainEntityOfPage": "https://serialfiler.org/automatic-stay-limits.html"
     },
     {
       "@type": "BreadcrumbList",
@@ -96,15 +96,15 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "When Does Refiling Make Sense?",
-          "item": "https://serialfiler.org/strategic-refiling.html"
+          "name": "Automatic Stay Limits for Serial Filers",
+          "item": "https://serialfiler.org/automatic-stay-limits.html"
         }
       ]
     },
     {
       "@type": "WebPage",
-      "name": "When Does Refiling Make Sense?",
-      "url": "https://serialfiler.org/strategic-refiling.html",
+      "name": "Automatic Stay Limits for Serial Filers",
+      "url": "https://serialfiler.org/automatic-stay-limits.html",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [
@@ -207,29 +207,8 @@
   }
 </style>
 
-<link rel="alternate" hreflang="en" href="https://serialfiler.org/strategic-refiling.html">
-<link rel="alternate" hreflang="es" href="https://serialfiler.org/strategic-refiling-es.html">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NonprofitOrganization",
-  "name": "Open Bankruptcy Project",
-  "alternateName": "OBP",
-  "url": "https://openbankruptcyproject.org",
-  "email": "info@openbankruptcyproject.org",
-  "taxID": "41-5159631",
-  "nonprofitStatus": "Nonprofit501c3",
-  "description": "The Open Bankruptcy Project is a 501(c)(3) nonprofit providing free tools, research, and consumer guides to help people navigate the federal bankruptcy system. We also conduct and publish empirical research on how the system actually works for consumers and share findings with rule-making bodies, regulators, and the public.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1000 W 100th St",
-    "addressLocality": "Kansas City",
-    "addressRegion": "MO",
-    "postalCode": "64114",
-    "addressCountry": "US"
-  }
-}
-</script>
+<link rel="alternate" hreflang="en" href="https://serialfiler.org/automatic-stay-limits.html">
+<link rel="alternate" hreflang="es" href="https://serialfiler.org/automatic-stay-limits-es.html">
 </head>
 <body>
 
@@ -245,80 +224,66 @@
     <a href="/calculator.html">Calculator</a>
     <a href="/dismissed-vs-discharged.html">Dismissed vs Discharged</a>
     <a href="/waiting-periods.html">Waiting Periods</a>
-    <a href="/automatic-stay-limits.html">Stay Limits</a>
+    <a href="/automatic-stay-limits.html" class="active">Stay Limits</a>
     <a href="/no-stay-at-all.html">No Stay</a>
-    <a href="/strategic-refiling.html" class="active">Strategic</a>
+    <a href="/strategic-refiling.html">Strategic</a>
     <a href="/data.html">Data</a>
   </div>
 </nav>
 
 <header>
-  <h1>When Does <span class="accent">Refiling</span> Make Sense?</h1>
-  <p class="subtitle">Legitimate reasons to file bankruptcy again - not all repeat filings are abuse</p>
+  <h1>Automatic Stay Limits for <span class="accent">Serial Filers</span></h1>
+  <p class="subtitle">Section 362(c)(3) - your stay may expire in 30 days if you had a prior case pending</p>
 </header>
 
 <div class="breadcrumb" aria-label="Breadcrumb">
-  <a href="https://1328f.com/">Network</a> &rsaquo; <a href="/">Serial Filing</a> &rsaquo; Strategic Refiling
+  <a href="https://1328f.com/">Network</a> &rsaquo; <a href="/">Serial Filing</a> &rsaquo; Stay Limits
 </div>
 
 <main id="main-content">
 
   <div class="content-section">
-    <h2>Refiling Is Not Always Abuse</h2>
-    <p>The term "serial filer" carries negative connotations, but the reality is more nuanced. Many people file bankruptcy more than once for entirely legitimate reasons. Life does not stop being difficult after one bankruptcy case, and the Bankruptcy Code anticipates repeat filings by providing specific rules for how they are handled.</p>
-    <p>The key question is not whether you are filing again, but why. Courts distinguish between good-faith repeat filers who genuinely need relief and bad-faith filers who are gaming the system.</p>
+    <h2>The 30-Day Stay Under 362(c)(3)</h2>
+    <p><a href="https://automaticstay.org" title="Section 362 Automatic Stay - Open Bankruptcy Project" target="_blank" rel="noopener">Section 362</a>(c)(3) provides that if a debtor had one prior bankruptcy case pending and dismissed within the 1-year period before the current filing, the <a href="https://automaticstay.org" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project" target="_blank" rel="noopener">automatic stay</a> in the new case terminates after 30 days unless the court extends it.</p>
+    <p>This is one of the most significant consequences of serial filing. The <a href="https://automaticstay.org" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project" target="_blank" rel="noopener">automatic stay</a> - the powerful injunction that stops all creditor collection, foreclosure, <a href="https://stopgarnishment.org/" title="wage garnishment">garnishment</a>, and lawsuits - is designed to give debtors breathing room. But Congress limited this protection for repeat filers who it presumed were filing for delay rather than legitimate relief.</p>
   </div>
 
   <div class="content-section">
-    <h2>Legitimate Reasons to Refile</h2>
-
-    <h3>1. Income change</h3>
-    <p>You filed <a href="https://chapter7vs13.org/" title="Chapter 13">Chapter 13</a> but lost your job and could not maintain plan payments. The case was dismissed. Now you have a new job and want to try again, or your income has dropped enough to qualify for <a href="https://whatischapter7.com/" title="Chapter 7">Chapter 7</a>.</p>
-
-    <h3>2. New debts after discharge</h3>
-    <p>You received a <a href="https://whatischapter7.com/" title="Chapter 7">Chapter 7</a> <a href="https://bankruptcydischarge.org/" title="discharge">discharge</a> years ago, but new medical bills, a divorce, or a business failure has created a new debt crisis. These are new debts, not an attempt to re-litigate old ones.</p>
-
-    <h3>3. Prior case dismissed without discharge</h3>
-    <p>If your prior case was dismissed (not discharged), none of the <a href="https://bankruptcydischarge.org/" title="discharge">discharge</a> bars apply. You are free to <a href="https://canifileagain.org/" title="file bankruptcy again">file again</a> immediately, subject only to the <a href="https://109g.org">180-day filing bar under Section 109(g)</a> in certain circumstances.</p>
-
-    <h3>4. Different chapter needed</h3>
-    <p>Your circumstances changed so that a different chapter is more appropriate. Maybe you filed <a href="https://chapter7vs13.org/" title="Chapter 13">Chapter 13</a> but now qualify for Chapter 7, or you filed Chapter 7 but need Chapter 13 to save your home.</p>
-
-    <h3>5. Attorney errors in prior case</h3>
-    <p>Your prior case was dismissed because your attorney failed to file required documents, missed deadlines, or provided deficient representation. This is not your fault, and courts recognize this when evaluating <a href="https://chapter13plan.org/" title="good faith">good faith</a>.</p>
-  </div>
-
-  <div class="content-section">
-    <h2>What Courts Look For</h2>
-    <p>When evaluating a repeat filing, courts consider:</p>
+    <h2>How to Extend the Stay</h2>
+    <p>To extend the stay beyond 30 days, you must file a motion and prove by clear and convincing evidence that the new case was filed in <a href="https://chapter13plan.org/" title="good faith">good faith</a>. The motion must be filed within the 30-day window - if the stay expires, you must file a motion to reimpose it instead.</p>
+    <p>The court considers the "totality of circumstances" to determine <a href="https://chapter13plan.org/" title="good faith">good faith</a>. Favorable factors include:</p>
     <ul>
-      <li><strong>Changed circumstances</strong> - Is there a material difference between your situation now and when you filed before?</li>
-      <li><strong>Ability to complete</strong> - Can you realistically complete a <a href="https://chapter13plan.org" title="Chapter 13 Repayment Plan - Open Bankruptcy Project" target="_blank" rel="noopener">Chapter 13 plan</a> or qualify for Chapter 7 discharge?</li>
-      <li><strong>Creditor impact</strong> - Will creditors receive meaningful payment or is this purely a delay tactic?</li>
-      <li><strong>Pattern of filing</strong> - Have you filed multiple times with each case failing for the same reason?</li>
+      <li>Changed circumstances since the prior case (new job loss, medical emergency, divorce)</li>
+      <li>The prior case was not dismissed for failure to comply with court orders</li>
+      <li>The debtor is now able to complete a plan or qualify for <a href="https://whatischapter7.com/" title="Chapter 7">Chapter 7</a></li>
+      <li>Creditors would not be prejudiced by the extension</li>
     </ul>
-
-    <div class="green-box">
-      <p><strong>Good news:</strong> A single prior <a href="https://dismissedbankruptcy.org/" title="dismissal">dismissal</a> followed by a good-faith refiling is very common and rarely draws judicial skepticism. The problems arise with three or more filings, or when the same issues (missed payments, missing documents) cause repeated dismissals.</p>
+    <div class="warning-box">
+      <p><strong>Presumption of bad faith:</strong> <a href="https://automaticstay.org" title="Section 362 Automatic Stay - Open Bankruptcy Project" target="_blank" rel="noopener">Section 362</a>(c)(3)(C) creates a presumption that the new filing is not in good faith if the prior case was dismissed after the debtor failed to file required documents, failed to perform the terms of a plan, or there has been no substantial change in the debtor's financial affairs.</p>
     </div>
   </div>
 
   <div class="content-section">
-    <h2>Know Your Limitations Before Refiling</h2>
+    <h2>Circuit Split: Does the Stay Terminate in Full or Only as to the Debtor?</h2>
+    <p>There is a significant circuit split on whether <a href="https://automaticstay.org" title="Section 362 Automatic Stay - Open Bankruptcy Project" target="_blank" rel="noopener">Section 362</a>(c)(3) terminates the stay entirely (against the debtor, the estate, and all property) or only as to the debtor and the debtor's property. Some courts hold that the stay continues to protect estate property even after the 30-day expiration. Check your circuit's interpretation before relying on this distinction.</p>
+  </div>
+
+  <div class="content-section">
+    <h2>Comparison: One Prior Case vs. Two or More</h2>
     <table>
-      <tr><th scope="col">Concern</th><th scope="col">Rule</th><th scope="col">Details</th></tr>
-      <tr><td><a href="https://dischargebar.org" title="Bankruptcy Discharge Bar - Open Bankruptcy Project" target="_blank" rel="noopener">Discharge bar</a></td><td>727(a)(8)/(9), <a href="https://1328f.com/" title="Section 1328(f)">1328(f)</a></td><td><a href="https://dischargebar.org/all-bars-chart.html">See all bars</a></td></tr>
-      <tr><td>Filing bar</td><td><a href="https://109g.org/" title="Section 109(g)">109(g)</a></td><td>180 days after certain dismissals</td></tr>
-      <tr><td>Limited stay</td><td>362(c)(3)</td><td><a href="/automatic-stay-limits.html">30 days if 1 prior case</a></td></tr>
-      <tr><td>No stay</td><td>362(c)(4)</td><td><a href="/no-stay-at-all.html">No stay if 2+ prior cases</a></td></tr>
+      <tr><th scope="col">Situation</th><th scope="col">Stay Duration</th><th scope="col">Statute</th></tr>
+      <tr><td>No prior cases in past year</td><td>Full stay</td><td>362(a)</td></tr>
+      <tr><td>1 prior case pending in past year</td><td>30 days (extendable)</td><td>362(c)(3)</td></tr>
+      <tr><td style="color:var(--red)">2+ prior cases pending in past year</td><td style="color:var(--red)">NO stay at all</td><td style="color:var(--red)">362(c)(4)</td></tr>
     </table>
+    <p>For the complete analysis of when no stay applies, see <a href="/no-stay-at-all.html">No Stay at All</a>.</p>
   </div>
 
   <div class="cta-box">
-    <h3>Check Your Eligibility</h3>
+    <h3>Check Your Discharge Eligibility</h3>
     <div class="cta-links">
       <a href="https://1328f.com?utm_source=serialfiler.org&utm_medium=referral&utm_campaign=btn-network" class="primary-btn">Discharge Screener</a>
-      <a href="https://dischargebar.org/calculator.html?utm_source=serialfiler.org&utm_medium=referral&utm_campaign=btn-network" class="secondary-btn">Bar Calculator</a>
+      <a href="https://automaticstay.org?utm_source=serialfiler.org&utm_medium=referral&utm_campaign=btn-network" class="secondary-btn">Stay Guide</a>
     </div>
   </div>
 
@@ -333,10 +298,10 @@
 </div>
 <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:1rem 1.5rem;max-width:700px;margin:2rem auto">
     <p style="color:#f0f6fc;font-weight:600;margin-bottom:0.5rem">Related Resources</p>
-    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0.25rem"><a href="https://dischargebar.org" style="color:#58a6ff">dischargebar.org</a> - All <a href="https://dischargebar.org" title="Bankruptcy Discharge Bar - Open Bankruptcy Project" target="_blank" rel="noopener">discharge bar</a> timing rules</p>
-    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0.25rem"><a href="https://109g.org" style="color:#58a6ff">109g.org</a> - The 180-day filing bar</p>
-    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0.25rem"><a href="https://dismissedbankruptcy.org" style="color:#58a6ff">dismissedbankruptcy.org</a> - Options after <a href="https://dismissedbankruptcy.org/" title="dismissal">dismissal</a></p>
-    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0"><a href="https://automaticstay.org" style="color:#58a6ff">automaticstay.org</a> - <a href="https://automaticstay.org" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project" target="_blank" rel="noopener">Automatic stay</a> for repeat filers</p>
+    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0.25rem"><a href="https://automaticstay.org" style="color:#58a6ff">automaticstay.org</a> - Complete <a href="https://automaticstay.org" title="Automatic Stay in Bankruptcy - Open Bankruptcy Project" target="_blank" rel="noopener">automatic stay</a> guide</p>
+    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0.25rem"><a href="/no-stay-at-all.html" style="color:#58a6ff">No Stay at All</a> - When 2+ prior cases mean no stay under 362(c)(4)</p>
+    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0.25rem"><a href="https://109g.org" style="color:#58a6ff">109g.org</a> - The 180-day filing bar under <a href="https://109g.org" title="Section 109 Eligibility - Open Bankruptcy Project" target="_blank" rel="noopener">Section 109</a>(g)</p>
+    <p style="color:#9eaab6;font-size:0.9rem;margin-bottom:0"><a href="https://dischargebar.org" style="color:#58a6ff">dischargebar.org</a> - All <a href="https://dischargebar.org" title="Bankruptcy Discharge Bar - Open Bankruptcy Project" target="_blank" rel="noopener">discharge bar</a> timing rules</p>
   </div>
 
 
@@ -403,7 +368,7 @@
   <ul style="list-style:none;padding:0;margin:0">
     <li style="margin-bottom:0.5rem"><a href="https://727a8.com/?utm_source=serialfiler.org&utm_medium=boost-top10&utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Section 727(a)(8) Discharge Waiting Period</a> <span style="color:#7d8590;font-size:0.8rem">-- 727a8.com</span></li>
     <li style="margin-bottom:0.5rem"><a href="https://bankruptcymeanstest.org/?utm_source=serialfiler.org&utm_medium=boost-top10&utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Bankruptcy Means Test by State</a> <span style="color:#7d8590;font-size:0.8rem">-- bankruptcymeanstest.org</span></li>
-    <li style="margin-bottom:0.5rem"><a href="https://chapter7vs13.org/?utm_source=serialfiler.org&utm_medium=boost-top10&utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Chapter 7 vs. Chapter 13 Comparison</a> <span style="color:#7d8590;font-size:0.8rem">-- chapter7vs13.org</span></li>
+    <li style="margin-bottom:0.5rem"><a href="https://meanstest.org/?utm_source=serialfiler.org&utm_medium=boost-top10&utm_campaign=btn-network" style="color:#58a6ff;text-decoration:none;font-size:0.9rem">Free Means Test Calculator</a> <span style="color:#7d8590;font-size:0.8rem">-- meanstest.org</span></li>
   </ul>
 </div>
 <!-- BTN:FOOTER:START -->
@@ -421,7 +386,7 @@
     <a href="https://github.com/sponsors/openbankruptcyproject" style="display:inline-block;background:#bf3989;color:#fff;padding:0.6rem 1.8rem;border-radius:6px;font-weight:600;font-size:0.95rem;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='#9e2c6f'" onmouseout="this.style.background='#bf3989'">&#9829; Sponsor</a>
     <a href="https://github.com/ilikemath9999/bankruptcy-discharge-screener">GitHub</a>
   </div>
-  <p class="disclaimer">This site provides general information only and does not constitute legal advice. No attorney-client relationship is created. Consult a licensed attorney for advice on your specific situation.<br>A project of the <strong>Open Bankruptcy Project</strong>, a 501(c)(3) public charity (EIN 41-5159631).</p>
+  <p class="disclaimer">This site provides general information only and does not constitute legal advice. No attorney-client relationship is created. Consult a licensed attorney for advice on your specific situation.<br>A project of the <strong>Open Bankruptcy Project</strong>, a 501(c)(3) nonprofit.</p>
   <p style="margin-top:0.75rem;font-size:0.8rem"><a href="https://openbankruptcyproject.org/privacy.html?utm_source=serialfiler.org&utm_medium=referral&utm_campaign=btn-network" style="color:#7d8590;text-decoration:none">Privacy</a> | <a href="https://openbankruptcyproject.org/terms.html?utm_source=serialfiler.org&utm_medium=referral&utm_campaign=btn-network" style="color:#7d8590;text-decoration:none">Terms</a> | <a href="https://openbankruptcyproject.org?utm_source=serialfiler.org&utm_medium=referral&utm_campaign=btn-network" style="color:#7d8590;text-decoration:none">Open Bankruptcy Project</a></p>
 </footer>
 <!-- BTN:FOOTER:END -->
